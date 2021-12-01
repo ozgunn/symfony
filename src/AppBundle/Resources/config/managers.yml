@@ -1,0 +1,10 @@
+services:
+    app.login_attempt_manager:
+        class: AppBundle\Manager\LoginAttemptManager
+        arguments:
+            - "@doctrine.orm.entity_manager"
+
+    app.ip_permission_list_manager:
+        class: AppBundle\Manager\IpPermissionListManager
+        arguments:
+            - "@doctrine.orm.entity_manager"
