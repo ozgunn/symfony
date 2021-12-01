@@ -1,0 +1,7 @@
+services:
+  login_attempt_subscriber:
+      class: AppBundle\EventListener\LoginAttemptListener
+      arguments:
+          - "@service_container"
+      tags:
+          - { name: kernel.event_subscriber }
