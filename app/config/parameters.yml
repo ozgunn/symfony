@@ -1,0 +1,5 @@
+parameters:
+  login_attempts_max: 3
+  login_attempts_minutes: 3
+  login_attempts_ip_limit: 1
+  login_attempts_ip_timeout: 60
